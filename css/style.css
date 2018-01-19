@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+body {
+	color: #2d3c49;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	width: 90%;
+	margin: 0 5% 0 5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.logo {
+	height: 100%;
+	width: 50%;
+}
+
+.header-text {
+	
+	width: 50%;
+	text-align: right;
+}
+
+hr {
+	width: 90%;
+	color: #7d97ad;
+}
+/*
+.title {
+	height: 50%;
+	width: 50%;
+	text-align: right;
+}
+
+.subtitle {
+	height: 50%;
+	width: 50%;
+	text-align: right;
+}
+*/
+main {
+	width: 90%; 
+	margin: 0 5% 0 5%;
+}
+
+.featured-work {
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.featured-work-title {
+	color: #7d97ad;
+	text-align: left;
+	width: 100%;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
