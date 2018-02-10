@@ -57,6 +57,11 @@ main {
 	width: 100%;
 }
 
+.featured-work-img {
+	width: 28%;
+	min-width: 15%;
+}
+
 .uppercase {
 	text-transform: uppercase;
 }
