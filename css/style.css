@@ -1,4 +1,4 @@
-@CHARSET "UTF-8";
+@charset "UTF-8";
 
 body {
 	color: #2d3c49;
@@ -13,13 +13,15 @@ header {
 }
 
 .logo {
-	height: 100%;
-	width: 50%;
+	width: 30%;
+}
+
+.logo-img {
+	width: 100%;
 }
 
 .header-text {
-	
-	width: 50%;
+	width: 70%;
 	text-align: right;
 }
 
@@ -40,6 +42,16 @@ hr {
 	text-align: right;
 }
 */
+
+.splash-image {
+    width: 100%;
+    max-height: 440px;
+}
+
+.splash-figure {
+	margin: 5px;
+}
+
 main {
 	width: 90%; 
 	margin: 0 5% 0 5%;
@@ -51,6 +63,10 @@ main {
 	flex-wrap: wrap;
 }
 
+.featured-section {
+	width: 30%;
+}
+
 .featured-work-title {
 	color: #7d97ad;
 	text-align: left;
@@ -58,10 +74,59 @@ main {
 }
 
 .featured-work-img {
-	width: 28%;
-	min-width: 15%;
+	width: 100%;
+}
+
+.featured-work-figure {
+	margin: 10px;
 }
 
 .uppercase {
 	text-transform: uppercase;
 }
+
+.img-div {
+	width: 100%;
+    text-align: center; /* ensures the image is always in the h-middle */
+    
+    overflow: hidden;
+}
+
+.cropped-img {
+    position: relative; /* allows repositioning */
+     
+    left: 100%; /* move the whole width of the image to the right */
+     
+    margin-left: -200%; /* magic! */
+    
+}
+
+/* TODO create a better solution without impact on html */
+/* Image Center Crop Pattern CSS */
+
+.img-div.crop {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 200px;
+}
+
+.img-div.crop img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+div.crop.crop-top img { margin: -10% auto 0; }
+div.crop-bottom img { margin: 0 auto -10%; }
+div.crop.crop-vertically img { margin: -9% auto; }
+div.crop.crop-right img { width: 140%; }
+div.crop.crop-left img { width: 140%; margin: 0 0 0 -40%; }
+div.crop.crop-horizontally img { width: 180%; margin: 0 -20%; }
+.img-div.crop.crop-square img {
+  width: 120.05%; /* calculate based on your original image... img-width*100/img-height */
+  margin: 0 0 0 -70%; /* the above value minus 50 */
+}
+
+

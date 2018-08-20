@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<meta charset="UTF-8">
 		<title>Alberto's Personal Portfolio</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/responsive.css">
 	</head>
 	<body>
 		<header>
-			<div class=logo>
-				<img src="https://1onjea25cyhx3uvxgs4vu325-wpengine.netdna-ssl.com/wp-content/themes/udacity_wp_1_8/images/udacity_mark.png" alt="Udacity Logo" width="150px">
+			<div class="logo">
+				<img class="logo-img" src="https://1onjea25cyhx3uvxgs4vu325-wpengine.netdna-ssl.com/wp-content/themes/udacity_wp_1_8/images/udacity_mark.png" alt="Udacity Logo" >
 			</div>
 			<div class="header-text">
 				<h1 class="title uppercase">Alberto de Paola</h1>
@@ -18,42 +19,54 @@
 		</header>
 		<hr>
 		<main>
-			<section class="main">
-				<figure>
-					<img class="splash-image" src="" alt="Presentation Image" >
+			<section class="presentation">
+				<h2>Personal Portfolio</h2>
+				<figure class="splash-figure">
+					<img class="splash-image" src="imgs/presentation_1280.jpg" alt="Presentation Image" >
 				</figure>
 			</section>
 			<section class="featured-work">
 				<h3 class="featured-work-title">Featured Work</h3>
-				<figure class="featured-work-img">
-					<img alt="Movie Website" src="" width="200px" height="150px">
-					<figcaption>
-						<h2 class="uppercase">Movie Website</h2> 
-						<p>
-							<a href="https://github.com/albertodepaola/ud036_StarterCode" title="Movie Website Project">Movie Project</a>
-						</p> 
-					</figcaption>
-				</figure>				
-				<figure class="featured-work-img">
-					<img alt="Movie Website" src="" width="200px" height="150px">
-					<figcaption>
-						<h2 class="uppercase">Simple LogParser</h2> 
-						<p>
-							<a href="https://github.com/albertodepaola/LogParser" title="LogParser project">LogParser</a>
-						</p> 
-					</figcaption>
-				</figure>
-				<figure class="featured-work-img">
-					<img alt="Movie Website" src="" width="200px" height="150px">
-					<figcaption>
-						<h2 class="uppercase">Some other project</h2> 
-						<p>
-							<a href="https://github.com/albertodepaola/ud036_StarterCode" title="Some project">some project</a>
-						</p> 
-					</figcaption>
-				</figure>
+				<article class="featured-section">
+					<figure class="featured-work-figure">
+						<a href="https://github.com/albertodepaola/ud036_StarterCode" title="Movie Website Project">
+							<img class="featured-work-img" alt="Movie Website" src="imgs/film-role_640.jpg" >
+						</a>
+						<figcaption>
+							<h2 class="uppercase">Movie Website</h2> 
+							<p>
+								This projects stores a list of movies, with trailer, cover art and plot summary that is displayed in a pre formatted html file. The trailer is played in a modal when the cover art is clicked.
+							</p> 
+						</figcaption>
+					</figure>				
+				</article>
+				<article class="featured-section">
+					<figure class="featured-work-figure">
+						<a href="https://github.com/albertodepaola/LogParser" title="LogParser project">
+							<img class="featured-work-img" alt="Log Parser" src="imgs/logParser_640.jpg" >
+						</a>
+						<figcaption>
+							<h2 class="uppercase">Simple LogParser</h2>
+							<p>
+								This project aims to provide a simple framework generate different parsers for different files. It uses a configuration file in order to parse the input into its elements and return the desired information.
+							</p>
+						</figcaption>
+					</figure>
+				</article>
+				<article class="featured-section">
+					<figure class="featured-work-figure">
+						<a href="https://github.com/albertodepaola/catalog-project" title="Simple Catalog App">
+							<img class="featured-work-img" alt="Simple Catalog App" src="imgs/knowledgePath_640.jpg" >
+						</a>	
+						<figcaption>
+							<h2 class="uppercase">Simple Catalog App</h2>
+							<p>
+								This simple site uses Flask-AppBuilder and implements simple OAuth with google for user authentication, auto CRUD generation and custom widgets for faster and better UI. It uses BootStrap CSS and JS, BootsWatch Themes and Font-Awesome CSS and Fonts.
+							</p>
+						</figcaption>
+					</figure>
+				</article>
 			</section>
 		</main>
-		
 	</body>
 </html>
